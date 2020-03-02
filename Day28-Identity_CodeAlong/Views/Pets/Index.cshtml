@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<Pets>
+
+<h1>Index</h1>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Is Cute?</th>
+    </tr>
+    @foreach (Pets pet in Model)
+    {
+        <tr>
+            <td>@pet.Name</td>
+            <td>@pet.Type</td>
+            <td>@pet.Cute</td>
+        </tr>
+    }
+
+</table>
+
+<a class="btn btn-success" href="../Pets/AddPet">Add a new pet!</a>
+

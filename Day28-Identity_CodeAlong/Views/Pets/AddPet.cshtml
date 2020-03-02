@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "AddPet";
+}
+
+<h1>Add Pet</h1>
+
+<form action="../Pets/AddPet" method="post" class="form-control">
+    <input type="text" name="Name" placeholder="Name" />
+    <input type="text" name="Type" placeholder="Type" />
+    Cute: <input type="radio" name="Cute" value="true" />
+    Not Cute: <input type="radio" name="Cute" value="false" />
+
+    <input type="submit" value="Add Pet" />
+</form>
